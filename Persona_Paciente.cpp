@@ -30,9 +30,9 @@ char *Persona_Paciente::concatenar_nom01()
   char *apellido = getApellido();
 
   char *nombre_completo = new char[strlen(nombre) + strlen(apellido) + 3];
-  strcpy(nombre_completo, nombre);
+  strcpy(nombre_completo, apellido);
   strcat(nombre_completo, ",");
-  strcat(nombre_completo, apellido);
+  strcat(nombre_completo, nombre);
 
   return nombre_completo;
 }
